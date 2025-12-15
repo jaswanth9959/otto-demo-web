@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Avenir", sans-serif;
+  background-color: #f9f9f9;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .header {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1;
+    color: #444444;
+  }
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444444;
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #212529;
+}
+/* Scrollbar */
+
+@layer utilities {
+  .btn_white {
+    @apply border-white bg-white px-8 py-3 text-green-50;
+  }
+  .btn_white_text {
+    @apply border-white bg-white px-8 py-3 text-gray-90;
+  }
+  .btn_green {
+    @apply border-green-50 bg-green-50 px-8 py-5 text-white;
+  }
+  .btn_dark_green {
+    @apply bg-green-90 px-8 py-4 text-white transition-all hover:bg-black;
+  }
+  .btn_dark_green_outline {
+    @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
+  }
+
+  .text-green {
+    color: #335ee0;
+  }
+
+  .text-green {
+    color: #2aa782;
+  }
+
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .padding-container {
+    @apply px-6 lg:px-20 3xl:px-0;
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-center justify-start;
+  }
+
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+
+  /* FONTS */
+  .regular-64 {
+    @apply font-['Avenir'] text-[64px] font-[400] leading-[120%];
+  }
+
+  .regular-40 {
+    @apply font-['Avenir'] text-[40px] font-[400] leading-[120%];
+  }
+
+  .regular-32 {
+    @apply font-['Avenir'] text-[32px] font-[400];
+  }
+
+  .regular-24 {
+    @apply font-['Avenir'] text-[24px] font-[400];
+  }
+
+  .regular-20 {
+    @apply font-['Avenir'] text-[20px] font-[400];
+  }
+
+  .regular-18 {
+    @apply font-['Avenir'] text-[18px] font-[400];
+  }
+
+  .regular-16 {
+    @apply font-['Avenir'] text-[16px] font-[400];
+  }
+
+  .regular-12 {
+    @apply font-['Avenir'] text-[12px] font-[300] leading-[16px];
+  }
+
+  .medium-14 {
+    @apply font-['Avenir'] text-[14px] font-[600];
+  }
+
+  .bold-88 {
+    @apply font-['Avenir'] text-[88px] font-[700] leading-[120%];
+  }
+
+  .bold-64 {
+    @apply font-['Avenir'] text-[64px] font-[800] leading-[125%];
+  }
+
+  .bold-64-800 {
+    @apply font-['Avenir'] text-[64px] font-[800] leading-[120%];
+  }
+
+  .bold-60-800 {
+    @apply font-['Avenir'] text-[60px] font-[800] leading-[120%];
+  }
+
+  .bold-45 {
+    @apply font-['Avenir'] text-[45px] font-[500] leading-[125%];
+  }
+
+  .bold-60 {
+    @apply font-['Avenir'] text-[60px] font-[500] leading-[125%];
+  }
+
+  .bold-52 {
+    @apply font-['Avenir'] text-[52px] font-[500] leading-[120%];
+  }
+
+  .bold-50 {
+    @apply font-['Avenir'] text-[50px] font-[500] leading-[150%];
+  }
+
+  .bold-50-700 {
+    @apply font-['Avenir'] text-[50px] font-[700] leading-[150%];
+  }
+
+  .bold-38-800 {
+    @apply font-['Avenir'] text-[38px] font-[800] leading-[120%];
+  }
+
+  .bold-36 {
+    @apply font-['Avenir'] text-[36px] font-[500] leading-[120%];
+  }
+
+  .bold-32 {
+    @apply font-['Avenir'] text-[32px] font-[700] leading-[48px];
+  }
+
+  .bold-28 {
+    @apply font-['Avenir'] text-[28px] font-[500] leading-[36px];
+  }
+
+  .bold-28-500 {
+    @apply font-['Avenir'] text-[28px] font-[500] leading-[36px];
+  }
+
+  .bold-26-800 {
+    @apply font-['Avenir'] text-[26px] font-[800] leading-[36px];
+  }
+  .bold-26 {
+    @apply font-['Avenir'] text-[26px] font-[500] leading-[36px];
+  }
+
+  .bold-24 {
+    @apply font-['Avenir'] text-[24px] font-[500] leading-[32px];
+  }
+
+  .bold-24-500 {
+    @apply font-['Avenir'] text-[24px] font-[450] leading-[32px];
+  }
+
+  .bold-22 {
+    @apply font-['Avenir'] text-[22px] font-[400] leading-[28px];
+  }
+
+  .bold-18-500 {
+    @apply font-['Avenir'] text-[18px] font-[500] leading-[28px];
+  }
+
+  .bold-18 {
+    @apply font-['Avenir'] text-[18px] font-[400] leading-[28px];
+  }
+
+  .bold-16-500 {
+    @apply font-['Avenir'] text-[16px] font-[500] leading-[22px];
+  }
+
+  .bold-16-350 {
+    @apply font-['Avenir'] text-[16px] font-[350] leading-[22px];
+  }
+
+  .bold-16 {
+    @apply font-['Avenir'] text-[16px] font-[300] leading-[22px];
+  }
+
+  .bold-14 {
+    @apply font-['Avenir'] text-[14px] font-[400] leading-[20px];
+  }
+
+  .bold-12-350 {
+    @apply font-['Avenir'] text-[12px] font-[350] leading-[17px];
+  }
+
+  .bold-12 {
+    @apply font-['Avenir']  text-[12px] font-[300] leading-[17px];
+  }
+
+  .bold-12-800 {
+    @apply font-['Avenir'] text-[12px] font-[800] leading-[17px];
+  }
+
+  .bold-16-900 {
+    @apply font-['Avenir'] text-[16px] font-[900] leading-[22px];
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
