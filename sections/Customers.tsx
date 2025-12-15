@@ -125,7 +125,7 @@ const Customers = () => {
               </svg>
 
               <p className="bold-16-350 xl:bold-24-500 text-[#444444] w-full xl:w-[90%] lg:whitespace-break-spaces text-left">
-                {`Ottobooks has completely\ntransformed the way we work.\nWe used to spend hours\nmanually sorting through\nPDFs and spreadsheets, but\nnow all of our deduction\ndetails are in one place`}
+                {`Parsley has completely\ntransformed the way we work.\nWe used to spend hours\nmanually sorting through\nPDFs and spreadsheets, but\nnow all of our deduction\ndetails are in one place`}
               </p>
             </div>
             <div className="h-[1/3] md:w-2/3 lg:w-1/2 flex flex-col justify-start gap-2">
@@ -251,7 +251,7 @@ const Customers = () => {
           </svg>
 
           <p className="text-center bold-16 whitespace-break-spaces">
-            {`Ottobooks has completely\ntransformed the way we work.\nWe used to spend hours manually\nsorting through PDFs and\nspreadsheets, but now all of our\ndeduction details are in one place`}
+            {`Parsley has completely\ntransformed the way we work.\nWe used to spend hours manually\nsorting through PDFs and\nspreadsheets, but now all of our\ndeduction details are in one place`}
           </p>
 
           <div className="flex flex-col items-center gap-2">
